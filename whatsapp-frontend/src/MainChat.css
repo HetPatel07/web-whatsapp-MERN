@@ -1,0 +1,46 @@
+.mainChat{
+    flex: 70%;
+}
+.mainChat_header,.mainChat_footer{
+    background: #2a2f32;
+}
+
+.mainChat_content{
+    background-image: url('https://i.pinimg.com/originals/85/ec/df/85ecdf1c3611ecc9b7fa85282d9526e0.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.chatForm input{
+    outline-width: 0;
+    background-color: #323739;
+}
+.chatForm button{
+    display: none;
+}
+
+.mainChat_message{
+    width: fit-content;
+    position: relative;
+    align-self: flex-end;      
+}
+
+.mainMessage{
+    background-color: #00af9c;
+}
+
+.mainChat_message span.name{
+    position: absolute;
+    top: 0;
+}
+
+.message_sender{
+    align-self: flex-start;     
+}
+
+.message_sender .mainMessage{
+    background-color: #323739;   
+}
