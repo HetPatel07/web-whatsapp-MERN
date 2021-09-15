@@ -81,4 +81,8 @@ app.post('/messages/new' , (req,res) => {
     // res.send(req.body)
 })
 
+
+if(process.env.NODE_env === "production"){
+    app.use(express.static("whatsapp-frontend/build"))
+}
 app.listen(port, () => console.log(`app is running on port : ${port}`))
